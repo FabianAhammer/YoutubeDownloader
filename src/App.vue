@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div id="header">YouTube Downloader</div>
+    <ScrollList />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import ScrollList from "./components/ScrollList.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    ScrollList
   }
 };
 </script>
@@ -22,7 +22,15 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+#header {
+  width: 100vw;
+  background: linear-gradient(90deg, rgb(253, 55, 5), rgb(253, 130, 16));
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  color: white;
+  font-family: Alata;
+  font-size: 1.3em;
 }
 </style>
